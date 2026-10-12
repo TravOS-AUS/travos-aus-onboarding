@@ -1,7 +1,7 @@
 #!/bin/bash
 # TravOS developer setup for macOS. In Terminal:
 #
-#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TravOS-AUS/onboarding/main/setup-developer.sh)"
+#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TravOS-AUS/travos-aus-onboarding/main/setup-developer.sh)"
 #
 # Safe to re-run: every step checks before it acts.
 #   Check only:       TRAVOS_CHECK=1 /bin/bash -c "$(curl ...)"

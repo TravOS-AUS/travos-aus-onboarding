@@ -1,6 +1,6 @@
 # TravOS developer setup for Windows. In any PowerShell window:
 #
-#   irm https://raw.githubusercontent.com/TravOS-AUS/onboarding/main/setup-developer.ps1 | iex
+#   irm https://raw.githubusercontent.com/TravOS-AUS/travos-aus-onboarding/main/setup-developer.ps1 | iex
 #
 # Safe to re-run: every step checks before it acts.
 #   Check only:          $env:TRAVOS_CHECK=1; irm ... | iex

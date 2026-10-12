@@ -1,6 +1,6 @@
 # TravOS tester setup for Windows. In any PowerShell window:
 #
-#   irm https://raw.githubusercontent.com/TravOS-AUS/onboarding/main/setup-tester.ps1 | iex
+#   irm https://raw.githubusercontent.com/TravOS-AUS/travos-aus-onboarding/main/setup-tester.ps1 | iex
 #
 # Installs Chrome and Firefox; Edge ships with Windows. Safe to re-run.
 & {

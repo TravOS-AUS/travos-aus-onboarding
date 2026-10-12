@@ -1,7 +1,7 @@
 #!/bin/bash
 # TravOS tester setup for macOS. In Terminal:
 #
-#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TravOS-AUS/onboarding/main/setup-tester.sh)"
+#   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/TravOS-AUS/travos-aus-onboarding/main/setup-tester.sh)"
 #
 # Installs Chrome, Firefox and Edge; Safari ships with macOS. Safe to re-run.
 set -u
