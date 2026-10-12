@@ -40,6 +40,7 @@
             'Docker running'        = { docker info *> $null; $LASTEXITCODE -eq 0 }
             'Aspire CLI'            = { Has aspire }
             'dotnet-ef'             = { (dotnet tool list -g) -match '^dotnet-ef\s' }
+            'Claude Code'           = { Has claude }
             'HTTPS dev cert'        = { dotnet dev-certs https --check --trust *> $null; $LASTEXITCODE -eq 0 }
             'git core.longpaths'    = { (git config --global core.longpaths) -eq 'true' }
             'Windows long paths'    = { LongPathsOn }

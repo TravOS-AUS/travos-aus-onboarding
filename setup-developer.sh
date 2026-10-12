@@ -49,6 +49,7 @@ check() {
   row 'Docker running' docker info
   row 'Aspire CLI' has aspire
   row 'dotnet-ef' sh -c 'dotnet tool list -g | grep -q "^dotnet-ef "'
+  row 'Claude Code' has claude
   row 'HTTPS dev cert' dotnet dev-certs https --check --trust
   row 'workspace cloned' test -f "$REPO_PATH/bootstrap.sh"
   row 'portal config.json' configs_present
