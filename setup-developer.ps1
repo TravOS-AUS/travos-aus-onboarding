@@ -33,6 +33,7 @@
         Step 'Checking'
         $rows = [ordered]@{
             'git'                   = { Has git }
+            'GitHub CLI'            = { Has gh }
             'gh signed in'          = { gh auth status *> $null; $LASTEXITCODE -eq 0 }
             '.NET SDK 10'           = { (dotnet --list-sdks) -match '^10\.' }
             'Node 24'               = { (node --version) -like 'v24.*' }

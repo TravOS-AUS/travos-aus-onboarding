@@ -42,6 +42,7 @@ check() {
   step 'Checking'
   FAILED=0
   row 'git' has git
+  row 'GitHub CLI' has gh
   row 'gh signed in' gh auth status
   row '.NET SDK 10' sh -c 'dotnet --list-sdks | grep -q "^10\."'
   row 'Node 24' sh -c 'node --version | grep -q "^v24\."'
