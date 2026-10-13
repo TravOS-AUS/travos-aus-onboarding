@@ -18,9 +18,13 @@ PORTALS="$REPO_PATH/projects/travos-agent/repos/travos-web/public $REPO_PATH/pro
 step() { printf '\n\033[36m==> %s\033[0m\n' "$1"; }
 has() { command -v "$1" >/dev/null 2>&1; }
 
-# Adds a line to ~/.zprofile once and applies it to this run too.
+# Adds a line to ~/.zprofile once and applies it to this run too. A check-only
+# run applies it without writing, so the checks find the tools and the machine
+# is left as it was.
 profile() {
-  grep -qxF "$1" "$HOME/.zprofile" 2>/dev/null || echo "$1" >>"$HOME/.zprofile"
+  if [ -z "${TRAVOS_CHECK:-}" ]; then
+    grep -qxF "$1" "$HOME/.zprofile" 2>/dev/null || echo "$1" >>"$HOME/.zprofile"
+  fi
   eval "$1"
 }
 
